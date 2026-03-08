@@ -400,23 +400,23 @@ Always.
 ]
 
     images=[
-"images/chapter1.jpg.png",
-"images/chapter2.jpg.png",
-"images/chapter3.jpg.png",
-"images/chapter4.jpg.png",
-"images/chapter5.jpg.png",
-"images/chapter6.jpg.png",
-"images/chapter7.jpg.png",
-"images/chapter8.jpg.png",
-"images/chapter9.jpg.png",
-"images/chapter10.jpg.jpg",
-"images/chapter11.jpg.png",
-"images/chapter12.jpg.png",
-"images/chapter13.jpg.png",
-"images/chapter14.jpg.png",
-"images/chapter15.jpg.png",
-"images/chapter16.jpg.png",
-"images/chapter17.jpg.jpg"
+"chapter1.jpg.png",
+"chapter2.jpg.png",
+"chapter3.jpg.png",
+"chapter4.jpg.png",
+"chapter5.jpg.png",
+"chapter6.jpg.png",
+"chapter7.jpg.png",
+"chapter8.jpg.png",
+"chapter9.jpg.png",
+"chapter10.jpg.jpg",
+"chapter11.jpg.png",
+"chapter12.jpg.png",
+"chapter13.jpg.png",
+"chapter14.jpg.png",
+"chapter15.jpg.png",
+"chapter16.jpg.png",
+"chapter17.jpg.jpg"
 ]
 
     if "chapter" not in st.session_state:
@@ -449,4 +449,5 @@ Always.
     with col2:
         if st.button("Next ➡") and st.session_state.chapter < len(stories)-1:
             st.session_state.chapter+=1
+
             st.rerun()
