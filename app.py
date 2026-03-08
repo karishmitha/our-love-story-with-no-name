@@ -73,30 +73,15 @@ margin-bottom:20px;
 </style>
 """, unsafe_allow_html=True)
 
-# -------------------- MUSIC --------------------
-st.markdown("""
-<audio autoplay loop>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
-</audio>
-""", unsafe_allow_html=True)
-
-# ---------------- SECRET QUESTIONS ----------------
-correct1="park"
-correct2="first kiss"
-correct3="papa"
-
-if "unlocked" not in st.session_state:
-    st.session_state.unlocked=False
-
 # ---------------- OPENING PAGE ----------------
 if not st.session_state.unlocked:
 
     st.markdown("<div class='title'>Our Journey Begins Here ❤️</div>", unsafe_allow_html=True)
     st.write("Only someone special can unlock this story.")
 
-    q1=st.text_input("Where did we first meet properly?")
-    q2=st.text_input("What was our first romantic moment?")
-    q3=st.text_input("what is the name you kept for me?")
+    q1=st.text_input("what is the validity of learners license")
+    q2=st.text_input("what is the first letter of your name")
+    q3=st.text_input("what is the name you kept for your dog?")
 
     if st.button("Unlock Our Story ❤️"):
 
@@ -451,3 +436,4 @@ Always.
             st.session_state.chapter+=1
 
             st.rerun()
+
